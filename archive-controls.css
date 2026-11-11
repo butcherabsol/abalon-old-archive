@@ -159,3 +159,11 @@ html[data-appearance="stone"] .archive-translate:hover, html[data-appearance="st
 
 html[data-appearance="stone"] .dispel-title, html[data-appearance="stone"] .archive-page-title { background: #4a493f url('placeholders/stone/button-normal.png') center / 100% 100% no-repeat; }
 html[data-appearance="stone"] .dispel-title-text, html[data-appearance="stone"] .archive-page-title { color: #fff; text-shadow: 1px 1px 2px #000, 0 0 3px #000; }
+
+/* Medium-gray stone panel from the supplied game menu, for section headers. */
+html[data-appearance="stone"] img[src*="placeholders/stone/menu-header"],
+html[data-appearance="stone"] img[src*="placeholders/stone/other-header"],
+html[data-appearance="stone"] img[src*="placeholders/stone/gallery-"],
+html[data-appearance="stone"] img[src*="placeholders/stone/intro-timeline"] {
+  background: #555 url('placeholders/stone/section-reference.png') -390px -750px / 3840px 2880px no-repeat;
+}
