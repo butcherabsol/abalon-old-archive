@@ -156,3 +156,6 @@ html[data-appearance="blood"] .appearance-menu-heading { background: #151311; bo
 /* Original stone textures supplied for the Stone appearance. */
 html[data-appearance="stone"] .archive-translate, html[data-appearance="stone"] .archive-appearance, html[data-appearance="stone"] .archive-appearance-options button { background: #4a493f url('placeholders/stone/button-normal.png') center / 100% 100% no-repeat; }
 html[data-appearance="stone"] .archive-translate:hover, html[data-appearance="stone"] .archive-appearance:hover, html[data-appearance="stone"] .archive-appearance-options button:hover, html[data-appearance="stone"] .archive-appearance-options button[aria-pressed="true"] { background: #4a493f url('placeholders/stone/button-active.png') center / 100% 100% no-repeat; }
+
+html[data-appearance="stone"] .dispel-title, html[data-appearance="stone"] .archive-page-title { background: #4a493f url('placeholders/stone/button-normal.png') center / 100% 100% no-repeat; }
+html[data-appearance="stone"] .dispel-title-text, html[data-appearance="stone"] .archive-page-title { color: #fff; text-shadow: 1px 1px 2px #000, 0 0 3px #000; }

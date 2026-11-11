@@ -72,7 +72,7 @@
       item.node.setAttribute('src', name === 'recovered' ? item.original : 'placeholders/' + name + '/news-dot.svg');
     });
     themedImages.forEach(function (item) {
-      var source = name === 'recovered' ? item.original : item.original.replace('placeholders/', 'placeholders/' + name + '/') + (item.original.indexOf('?') === -1 ? '?' : '&') + 'theme=6';
+      var source = name === 'recovered' ? item.original : item.original.replace('placeholders/', 'placeholders/' + name + '/') + (item.original.indexOf('?') === -1 ? '?' : '&') + 'theme=7';
       item.node.setAttribute('src', source);
     });
     applyLogo();
