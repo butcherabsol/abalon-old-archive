@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><defs><radialGradient id="blood" cx="35%" cy="30%"><stop stop-color="#e04030"/><stop offset=".55" stop-color="#8a0e0a"/><stop offset="1" stop-color="#2a0403"/></radialGradient></defs><path d="M11 2C9 6 5 9 5 13a6 6 0 0 0 12 0c0-4-4-7-6-11z" fill="url(#blood)" stroke="#240403"/></svg>

@@ -1,0 +1,511 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html lang="ko"><head>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Abalon Entertainment</title>
+<meta name="description" content="게임개발 전문업체인 ABALON ENTERTAINMENT는 FreeBattlenet을 지원하는 전통 롤플레잉 게임 DISPEL을 개발하였으며, 자체 개발한 네트워크 엔진을 이용해 DISPEL 베틀넷 서비스와 온라인 게임 'DISPEL 온라인'(가제)를 인터넷 기반으로 상용 서비스 할 계획입니다.">
+<meta name="keywords" content="게임,네트웍게임,온라인게임,RPG,rpg,네트웍,룰풀레잉,베틀넷,오락,디스펠,아발론,네트워크게임,머드게임,Game Software,game,dispel,abalon,network,battlenet">
+<meta name="generator" content="Namo WebEditor v3.0">
+<style type="text/css">
+
+<!--
+
+.txt {  font-size: 10pt; line-height: 140%; color: #774488}
+
+.txt2 { font-size: 10pt; line-height: 125%; color: #CCCCCC}
+
+-->
+
+</style>
+<script language="JavaScript">
+
+<!--
+
+function MM_swapImgRestore() { //v2.0
+
+  if (document.MM_swapImgData != null)
+
+    for (var i=0; i<(document.MM_swapImgData.length-1); i+=2)
+
+      document.MM_swapImgData[i].src = document.MM_swapImgData[i+1];
+
+}
+
+
+
+function MM_preloadImages() { //v2.0
+
+  if (document.images) {
+
+    var imgFiles = MM_preloadImages.arguments;
+
+    if (document.preloadArray==null) document.preloadArray = new Array();
+
+    var i = document.preloadArray.length;
+
+    with (document) for (var j=0; j<imgFiles.length; j++) if (imgFiles[j].charAt(0)!="#"){
+
+      preloadArray[i] = new Image;
+
+      preloadArray[i++].src = imgFiles[j];
+
+  } }
+
+}
+
+
+
+function MM_swapImage() { //v2.0
+
+  var i,j=0,objStr,obj,swapArray=new Array,oldArray=document.MM_swapImgData;
+
+  for (i=0; i < (MM_swapImage.arguments.length-2); i+=3) {
+
+    objStr = MM_swapImage.arguments[(navigator.appName == 'Netscape')?i:i+1];
+
+    if ((objStr.indexOf('document.layers[')==0 && document.layers==null) ||
+
+        (objStr.indexOf('document.all[')   ==0 && document.all   ==null))
+
+      objStr = 'document'+objStr.substring(objStr.lastIndexOf('.'),objStr.length);
+
+    obj = eval(objStr);
+
+    if (obj != null) {
+
+      swapArray[j++] = obj;
+
+      swapArray[j++] = (oldArray==null || oldArray[j-1]!=obj)?obj.src:oldArray[j];
+
+      obj.src = MM_swapImage.arguments[i+2];
+
+  } }
+
+  document.MM_swapImgData = swapArray; //used for restore
+
+}
+
+//-->
+
+</script>
+<script language="JavaScript">
+<!--
+function namosw_exchange_src(name, rpath, nsdoc) 
+{ 
+  str = (navigator.appName == 'Netscape') ? nsdoc+'.'+name : 'document.all.'+name;
+  img = eval(str);
+  if (img) {
+    if (img.altsrc == null) {
+      img.altsrc = img.src;
+      img.src    = rpath;
+    } else {
+      var temp   = img.src;
+      img.src    = img.altsrc;
+      img.altsrc = temp;
+    }
+  } 
+}
+
+function namosw_preload_img()
+{ 
+  var img_list = namosw_preload_img.arguments;
+  if (document.preloadlist == null) 
+    document.preloadlist = new Array();
+  var top = document.preloadlist.length;
+  for (var i=0; i < img_list.length; i++) {
+    document.preloadlist[top+i]     = new Image;
+    document.preloadlist[top+i].src = img_list[i];
+  } 
+}
+
+//-->
+</script>
+
+<link rel="stylesheet" href="archive-controls.css?v=17">
+<script defer src="archive-translations.js?v=2"></script>
+<script defer src="archive-controls.js?v=24"></script>
+</head>
+
+<body background="game_sub1_files/img-bg.gif" bgcolor="black" text="black" link="blue" vlink="purple" alink="red" onload="MM_preloadImages('placeholders/menu-news2.gif.svg','#926250995620');MM_preloadImages('placeholders/menu-intro2.gif.svg','#926251060320');MM_preloadImages('placeholders/menu-pds2.gif.svg','#926251201810');MM_preloadImages('placeholders/menu-board2.gif.svg','#926251227350');MM_preloadImages('placeholders/mail2.gif.svg','#926258241880');MM_preloadImages('placeholders/gmenu-spe2.gif.svg','#926268986130');MM_preloadImages('placeholders/gmenu-cap2.gif.svg','#926269011780');MM_preloadImages('placeholders/gmenu-qna2.gif.svg','#926269032110'); namosw_preload_img('placeholders/beta2.jpg.svg')" marginwidth="0" marginheight="0" topmargin="0" leftmargin="0">
+ 
+
+<table border="0" cellpadding="0" cellspacing="0" width="700">
+    <tbody><tr>
+        <td width="150" valign="top"><table border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                    <td><p><a href="news.htm"><img alt="Abalon" src="placeholders/home.svg?v=3" width="150" height="89" border="0"></a></p></td>
+                </tr>
+                <tr>
+                    <td><p><img src="placeholders/menu-header.svg" alt="MENU" width="150" height="31" border="0"></p></td>
+                </tr>
+                <tr>
+                    <td><p><a href="news.htm"><img alt="News" src="placeholders/menu-news2.gif.svg" width="150" height="30" border="0" name="Image1"></a></p></td>
+                </tr>
+                <tr>
+                    <td><p><a href="intro.htm"><img alt="Introduction" src="placeholders/menu-intro2.gif.svg" width="150" height="30" border="0" name="Image2"></a></p></td>
+                </tr>
+                <tr>
+                    <td><p><img src="placeholders/menu-game2-active.svg" alt="Game (current page)" width="150" height="30" border="0"></p></td>
+                </tr>
+                <tr>
+                    <td><p><a href="https://web.archive.org/web/20000229230220/http://www.abalonet.com/pds-frm.html"><img alt="Downloads" src="placeholders/menu-pds2.gif.svg?v=2" width="150" height="30" border="0" name="Image6"></a></p></td>
+                </tr>
+                <tr>
+                    <td><p><a href="https://web.archive.org/web/20000229230220/http://www.abalonet.com/board-frm.html"><img alt="Board" src="placeholders/menu-board2.gif.svg?v=2" width="150" height="30" border="0" name="Image7"></a></p></td>
+                </tr>
+                <tr>
+                    <td><p><img src="placeholders/other-header.svg" alt="OTHER" width="150" height="18" border="0"></p></td>
+                </tr>
+                <tr>
+                    <td><p><a href="https://web.archive.org/web/20000229230220/mailto:webmaster@abalonet.com"><img alt="Email" src="placeholders/mail2.gif.svg?v=2" width="150" height="28" border="0" name="Image13"></a></p></td>
+                </tr>
+                <tr>
+                    <td><p><a href="https://web.archive.org/web/20000229230220/http://www.abalonet.com/dispel_ad4.zip"><img alt="dispel_ad4.zip" src="placeholders/dispel-ad4.svg?v=2" width="150" height="40" border="0"></a></p></td>
+                </tr>
+                <tr>
+                    <td><p align="center"><a href="https://web.archive.org/web/20000229230220/http://www.abalonet.com/beta/beta-board-frm.html" target="_top"><img src="placeholders/beta2.jpg.svg?v=3" width="150" height="68" border="0" alt="Beta test" name="image1" title="Beta test winners board"></a></p></td>
+                </tr>
+            </tbody></table></td>
+        <td width="550" valign="top"><table border="0" cellpadding="0" cellspacing="0" width="550">
+                <tbody><tr>
+                    <td colspan="2"><p><span class="archive-header-bar"><img src="placeholders/img11.gif.svg" alt="" width="551" height="24" border="0"><button id="archive-language-switch" class="archive-translate" type="button">English</button><button id="appearance-toggle" class="archive-appearance" type="button" aria-expanded="false" aria-controls="appearance-options">Appearance</button><span id="appearance-options" class="archive-appearance-options" hidden><span class="appearance-menu-heading">Themes</span><button id="appearance-recovered" type="button" aria-pressed="true">Recovered ✓</button><button id="appearance-tech" type="button" aria-pressed="false">90s Tech</button><button id="appearance-late" type="button" aria-pressed="false">Late 90s</button><button id="appearance-stone" type="button" aria-pressed="false">Stone</button><button id="appearance-rough" type="button" aria-pressed="false">Rough Stone</button><button id="appearance-blood" type="button" aria-pressed="false">Dark Fantasy</button><span class="appearance-menu-heading">Logo</span><button id="logo-text" type="button" aria-pressed="true">Text ✓</button><button id="logo-image" type="button" aria-pressed="false">Abalon logo</button><button id="logo-entertainment" type="button" aria-pressed="false">Abalon Entertainment</button><button id="logo-studio" type="button" aria-pressed="false">Abalon Studio</button></span></span></p></td>
+                </tr>
+                <tr>
+                    <td><p><img src="game_sub1_files/space.gif" width="182" height="1" border="0"></p></td>
+                    <td><table border="0" cellpadding="0" cellspacing="0">
+                            <tbody><tr>
+                                <td colspan="5" align="right"><p><span class="dispel-title"><img src="game_sub1_files/tit-game.gif" width="276" height="42" border="0"><span class="dispel-title-text">Dispel 2000</span></span></p></td>
+                            </tr>
+                            <tr>
+                                <td><p><img src="placeholders/gmenu-intro2-active.svg?v=3" alt="Story (current page)" width="86" height="23" border="0"></p></td>
+                                <td><p><a href="game_sub2.htm"><img alt="Features" src="placeholders/gmenu-spe2.gif.svg?v=3" width="86" height="23" border="0"></a></p></td>
+                                <td><p><a href="game_sub3.htm"><img alt="Gallery" src="placeholders/gmenu-cap2.gif.svg?v=3" width="86" height="23" border="0" name="Image16"></a></p></td>
+                                <td><p><a href="https://web.archive.org/web/20000229230220/http://www.abalonet.com/qna-frm.html"><img alt="Q&amp;A" src="placeholders/gmenu-qna2.gif.svg?v=2" width="56" height="23" border="0" name="Image17"></a></p></td>
+                                <td><p><img src="placeholders/game-menu-end.svg" alt="" width="55" height="23" border="0"></p></td>
+                            </tr>
+                        </tbody></table></td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="2"><table border="0" width="530">
+                            <tbody><tr>
+                                <td width="485" class="txt2"><p><font size="2" color="white"><b>Prologue</b></font></p>
+                                    <p align="justify">" 아주 오래 전 이야기<font color="white">란다. 오래 전 신들은 DMAN을 
+                                    만들고 사람들도 만들었지. 사람들은 DMAN에</font>서 
+                                    평화롭게 지냈고 신들은 사람들에게 많은 것들을 
+                                    주었어. 풀도 나무도... 하늘을 나는 새도 
+                                    주었지. 신들은 아주 흡족해 했단다. 그런데 
+                                    말이야. 시간이 지나면서 사람들은 평화로운 
+                                    세상에 싫증을 느낀 거야. 사람들은 서로를 
+                                    시기하고 미워하며 서로를 죽였지. 그들은 
+                                    전쟁을 일삼으며 신들이 만들어 준 대지를 
+                                    더럽혔지. 후... 너도 조금만 자라면 알게 
+                                    될 거다, 사람들이란 얼마나 어리석은 존재들인지."</p>
+                                    <p align="justify">" 이런 사람들을 
+                                    두고 신들은 고민을 했단다. 어떤 신들은 모두 
+                                    멸해버리자고 했고 어떤 신들은 그들이 지칠 
+                                    때까지 기다리자고 했단다. 사람들에게 허락한 
+                                    땅이니 사람들에게 맡기자고 한 신들도 있었단다. 
+                                    그러던 중에 큰 사건이 생긴 거야. 사람들을 
+                                    미워하던 파괴의 신 '하라스'가 DMAN에 내려와 
+                                    사람들을 학살하기 시작한 거야. 이에 창조의 
+                                    신 '바라'는 매우 화를 냈고 곧 신들은 둘로 
+                                    갈라져 심하게 싸웠지. 인간들의 싸움이 신들의 
+                                    싸움이 되어버린 거야. 하늘은 어둠으로 덮이고 
+                                    바다는 피 빛으로 물들었지. 땅에는 어둠만 
+                                    가득 차고 많은 사람들이 그 전쟁으로 죽어갔지."</p></td>
+                                <td width="45" align="right" valign="top"><p>&nbsp;</p></td>
+                            </tr>
+                            <tr>
+                                <td width="485" class="txt2"><p align="justify"><br> 
+                                    " 끝이 없어 보이던 전쟁은 힘의 신 "기드'가 
+                                    돌로 거대한 거인들을 만들면서 '하라스'에게 
+                                    유리하게 되었지. 그들은 그 거인들을 '갈가돌'이라 
+                                    불렀단다. 그들의 힘은 상상을 초월한 것이었단다. 
+                                    땅은 무참히 짓밟혔고 많은 수의 '갈가돌'들 
+                                    앞에 '바라'는 당황했단다. 이에 '바라'의 
+                                    아들이자 꿈의 신인 '할롬'은 '갈가돌'들을 
+                                    물리치기 위해 드래곤들을 만들어 냈단다. 
+                                    땅은 거대한 '갈가돌'들로 가득 차고 하늘은 
+                                    드래곤들로 뒤덮였단다. 굉장했을 게야. '할롬'이 
+                                    만든 드래곤들은 그 아름다운 자태만큼이나 
+                                    용맹했단다. 영원할 것 같았던 전쟁은 많은 
+                                    드래곤들의 죽을 앞에 조금씩 '바라'에게 유리하게 
+                                    되고 결국 '하라스'는 순백의 드래곤을 탄 
+                                    '할롬' 앞에 쓰러졌단다. '하라스'는 DMAN 
+                                    대륙 어딘가에 봉인되고 그를 따랐던 많은 
+                                    신들은 유배당하거나 멀리 떠나 버렸단다." 
+                                    </p>
+                                    <p align="justify">" 그제서야 '바라'는 
+                                    자신들의 전쟁으로 죽어 간 많은 사람들을 
+                                    돌아보게 되었어. 그들을 불쌍히 여긴 '바라'는 
+                                    영원의 땅 '엘로힘'을 만들고 선택받은 자들을 
+                                    그 곳으로 데려갔단다. '바라'와 많은 신들은 
+                                    '엘로힘'으로 떠나버리고 DMAN은 남겨진 사람들의 
+                                    것이 되었지. 영원을 허락 받지 못한 사람들의 
+                                    것 말이다. 너나 나처럼. "</p>
+                                    <p align="justify">" 그런데 '하라스'가 
+                                    봉인될 때 남긴 말이 있다는 구나. 언젠가 
+                                    사람들이 DMAN을 가득 채울 때 자신이 돌아 
+                                    올 것이라고 말이야. 사람들은 그 예언으로 
+                                    두려워했고 그런 사람들 앞에 '바라'는 한 
+                                    가지 약속을 했어. '하라스'가 돌아 올 때 
+                                    '엘로힘'의 길이 다시 열릴 것이라고. ... 
+                                    ... 얘야. 난 말이다 매일 밤 '엘로힘'을 꿈꾼단다. 
+                                    미움과 고통이 없는 그 곳. 영원한 사랑만이 
+                                    있을 그곳을 말이다."</p>
+                                    <p>할머닌 언제나 그렇게 '엘로힘'을 바라다가 
+                                    돌아가셨다.</p></td>
+                                <td width="45" align="right" valign="top"><p><a href="#top"><img src="placeholders/top.svg" alt="Back to top" width="41" height="37" border="0"></a></p></td>
+                            </tr>
+                            <tr>
+                                <td width="485" class="txt2"><p><font size="2" color="white"><b><br> 대략의 시나리오</b></font></p>
+                                    <p align="justify">DMAN에는 네 개의 나라( 
+                                    DEAMONLON, AESH, YAEM, SHEREG )가 있고 대륙의 
+                                    한 가운데인 AESH의 중심에 모든 대륙의 종교를 
+                                    관장하는 교황청이 있었다. 교황청은 DMAN의 
+                                    여러 종파들을 조절하며 종교적인 일들을 대표하였고 
+                                    대대로 교황은 신권으로써 DMAN 각 나라들의 
+                                    왕권을 조정하는 역할을 해 왔다. 그렇게 DMAN의 
+                                    역사는 균형을 이루어가며 발전해 왔다.</p>
+                                    <p align="justify">새로운 교황이 교황청에 
+                                    의해 선발이 되고 DMAN은 새 교황의 노력으로 
+                                    평화로운 시대를 맞이한 것처럼 보였다. 몇 
+                                    년이 흐른 후, 평화로와 보이던 DMAN은 교황의 
+                                    갑작스런 이단 선포에 혼란에 빠진다. 교황은 
+                                    자신에게 반대하는 모든 종파들에 이단 선언을 
+                                    한 것이다. 많은 종파들이 이단으로 선언되었고 
+                                    그 종파들의 도움을 많이 받던 각 나라들은 
+                                    교황의 신권 앞에 이단으로 선언된 종파들을 
+                                    멀리할 수밖에 없었다. 상황은 점점 나빠져 
+                                    교황은 마침내 모든 이단들을 척결하라는 이단 
+                                    탄압 전쟁을 선언하였다. 많은 지역에서 단지 
+                                    교리가 다르다는 이유로 사람들이 죽어가고 
+                                    이단으로 선언된 종파들은 표면적인 모든 활동을 
+                                    중지한 채 지하단체 같은 모임으로 전락하고 
+                                    말았다.</p>
+                                    <p align="justify">'아돈'은 DAEMONLON국의 
+                                    한 시골에서 자란 젊은이였다. 그는 따분한 
+                                    시골 생활에 싫증을 느끼고 모험을 찾아 수도인 
+                                    NAHASHI로의 여행을 떠난다. 여행을 통해 그는 
+                                    이단 탄압 전쟁과 교황의 폭정에 대해 차츰 
+                                    알게 된다. 한 달 여간의 여행을 통해 수도인 
+                                    NAHASHI에 도착한 그는 우연히 NAHASHI의 입구에서 
+                                    경비병에게 쫓기고 있는 한 젊은이를 도와주게 
+                                    되고 그 사건으로 경비병에 쫓기는 신세가 
+                                    된다.</p></td>
+                                <td width="45" align="right" valign="top"><p><a href="#top"><img src="placeholders/top.svg" alt="Back to top" width="41" height="37" border="0"></a></p></td>
+                            </tr>
+                            <tr>
+                                <td width="485" class="txt2"><p align="justify"><br> 
+                                    경비병들을 피해 NAHASHI를 벗어나자 그 젊은이는 
+                                    남쪽 마을 TERAS의 주점에 오면 후사하겠다는 
+                                    말만을 남기고 황급히 사라진다. NAHASHI에 
+                                    들어갈 수 없게 된 아돈은 항구마을 HARLOM으로 
+                                    향한다. HARLOM에서 사람들의 의뢰를 받아서 
+                                    모험가로써의 명성을 쌓아가던 아돈은 어느 
+                                    날 한 여성이 맡긴 편지를 TERAS의 자하 조직의 
+                                    우두머리에게 전해 달라는 의뢰를 받는다. 
+                                    TERAS로 간 아돈은 TERAS의 주점에서 자신이 
+                                    도와주었던 젊은이를 만난다. 그 젊은이는 
+                                    자신을 평민 레지스탕스의 일원이라고 소개하고 
+                                    같이 교황과 이 계급 사회를 타파하자는 제의를 
+                                    받는다. 고민하던 아돈은 일단 맡은 편지를 
+                                    전해주기 위해 그 젊은이를 따라 레지스탕스의 
+                                    본부가 있는 던젼으로 향한다.</p>
+                                    <p align="justify">레지스탕스의 우두머리 
+                                    <font color="white"><b>쉠</b></font>은 젊고 
+                                    매우 열정 있는 사람이었다. 그에게서는 강한 
+                                    카리스마와 거칠지만 순수한 정신을 느낄 수 
+                                    있었다. 그는 드래곤을 마음대로 부렸으며 
+                                    그 힘으로 교황의 군대와 대적하는 중이었다. 
+                                    <font color="white"><b>쉠</b></font>은 아돈에게 
+                                    YAEM의 ANAN에 가서 그 편지를 준 여인을 찾아 
+                                    답신을 전해줄 것을 아돈에게 의뢰하고 아돈은 
+                                    그 길로 YAEM으로 향한다. YAEM의 ANAN에서 
+                                    그 여인을 찾기는 어렵지 않았다. 그 여인은 
+                                    ANAN의 사원에서 쉽게 찾을 수 있었고 그녀에게 
+                                    편지를 전해 준 아돈은 그녀가 교황의 폭정에 
+                                    항거하기 위해 결성된 집단의 높은 위치에 
+                                    있음을 알게 된다. 교황에게 이단으로 선언을 
+                                    받았던 많은 종파들과 교황청에서 교황의 폭력행사에 
+                                    반대해서 교황청을 빠져 나온 사람들은 종교의 
+                                    원래 의미를 되찾고 평화로운 대륙을 만들기 
+                                    위해 순수 종교 단체를 결성하고 대항하는 
+                                    중이었다.</p></td>
+                                <td width="45" align="right" valign="top"><p><a href="#top"><img src="placeholders/top.svg" alt="Back to top" width="41" height="37" border="0"></a></p></td>
+                            </tr>
+                            <tr>
+                                <td width="485" class="txt2"><p align="justify"><br> 
+                                    그 무렵, 대륙 전체는 엘로힘이 곧 강림할 
+                                    것이라는 소문이 돌고 대륙 전체는 그 소문에 
+                                    술렁거린다. 한 편 교황이 암흑마법으로써 
+                                    소환한 '갈가돌'들은 대륙 이곳저곳을 무참히 
+                                    짓밟고 다녔다. 대륙 이곳 저곳을 떠돌며 모험가로써 
+                                    살아가던 아돈은 다시 TERAS를 찾게 되고 평민 
+                                    레지스탕스의 우두머리인 <font color="white"><b>쉠</b></font>에게서 
+                                    AESH에 있는 FETAE라는 도시에서 한 사람을 
+                                    만나 조직에 필요한 자금을 좀 받아와 달라는 
+                                    부탁을 받는다. <font color="white"><b>쉠</b></font>은 
+                                    그 사람의 자금 조달로 레지스탕스의 사람들이 
+                                    생계를 유지하고 있다는 말을 해주고는 FETAE로의 
+                                    여행 자금을 준다.</p>
+                                    <p align="justify">FETAE로 간 아돈은 거기서 
+                                    한 지방 유지를 만나고 그에게서 레지스탕스에게 
+                                    건네줄 자금과 레지스탕스의 우두머리에게 
+                                    전해 줄 편지를 받는다. 그 무렵 SHEREG국의 
+                                    국왕은 교황의 오랜 전쟁에 반기를 들고 이단 
+                                    탄압 중지를 요청한다. 이에 교황청은 SHEREG국이 
+                                    신의 말을 어긴다며 화를 내었고 다른 왕국들을 
+                                    선동하여 SHEREG국을 공격하게 된다. 다른 
+                                    나라들은 자국들의 위상 확보와 영토 확보를 
+                                    위해 SHEREG를 침공하고 대륙은 왕국간의 전쟁에 
+                                    휩싸이게 된다. 어지러운 대륙의 정세를 타고 
+                                    곧 엘로힘으로의 길이 열릴 것이라는 소문이 
+                                    평민들 사이에 끊임없이 돌고 그 소문으로 
+                                    대륙은 더욱 혼란에 빠진다.</p>
+                                    <p align="justify">자금과 편지를 전해줄 
+                                    목적으로 다시 TERAS를 찾은 아돈은 한동안 
+                                    레지스탕스의 본부에서 지내게 되고 우연히 
+                                    <font color="white"><b>쉠</b></font>과 그의 
+                                    측근들이 벌리는 말다툼을 듣게 된다. 그들은 
+                                    엘로힘의 강림을 비는 행사에 대해 의견 대립을 
+                                    보이고 있었다. FETAE의 유지는 <font color="white"><b>쉠</b></font>에게 
+                                    엘로힘으로의 길을 여는 방법을 발견했다는 
+                                    편지를 보내왔고 그러기 위해선 사람들의 강림제가 
+                                    필요하다고 전해 온 것이다. 이에 <font color="white"><b>쉠</b></font>은 
+                                    엘로힘은 소문일 뿐이며 많은 사람들이 그렇게 
+                                    공개적으로 모이는 것은 위험하다며 반대를 
+                                    했다. 이에 그의 측근들은 SHEREG국과의 전쟁으로 
+                                    교황청과 왕국은 정신이 없으므로 지금이 가장 
+                                    적절한 때라며 많은 사람들을 위해서도 행사를 
+                                    해야 한다고 주장한다. 사람들의 바램을 외면하지 
+                                    못한 <font color="white"><b>쉠</b></font>은 
+                                    결국 행사를 하기로 하고 조용히 아돈을 불러 
+                                    FETAE로 다시 가서 그 유지에게서 엘로힘으로의 
+                                    길을 여는 방법의 근원에 대해 조사해 달라는 
+                                    부탁을 한다.</p></td>
+                                <td width="45" align="right" valign="top"><p><a href="#top"><img src="placeholders/top.svg" alt="Back to top" width="41" height="37" border="0"></a></p></td>
+                            </tr>
+                            <tr>
+                                <td width="485" class="txt2"><p align="justify"><br> 
+                                    다시 FETAE로 간 아돈은 그 유지의 집에서 
+                                    우연히 교황의 편지를 발견하게 된다. 그 유지는 
+                                    교황이 평민 단체의 와해를 목적으로 평민 
+                                    단체에 접근시킨 사람이었다. 그는 평민 단체에 
+                                    자금을 대어 주면서 그들과의 의심을 없애고 
+                                    그들을 엘로힘 강림제를 통해 모조리 죽이라는 
+                                    명령을 받아 실행하고 있었다. 아돈은 급히 
+                                    TERAS의 레지스탕스 본부로 돌아오지만 예정이 
+                                    앞당겨진 강림제를 위해 모두 JAKALE로 떠나 
+                                    버린 후였고 마을 노인으로부터 <font color="white"><b>쉠</b></font>이 
+                                    자신에게 쓴 편지를 건네 받는다. <font color="white"><b>쉠</b></font>은 
+                                    일이 잘못 되게 되면 순수 종교 단체의 여인을 
+                                    찾아가라고 한다.</p>
+                                    <p align="justify">드디어 강림제의 날이 
+                                    오고 많은 사람들이 JAKALE 동쪽의 숲에 모였다. 
+                                    숲의 공터에는 제단이 마련되었고 수많은 사람들이 
+                                    제단을 향해 엄숙한 분위기로 기도를 드렸다. 
+                                    그러나 그들 앞에 나타난 것은 엘로힘으로의 
+                                    길이 아닌 교황의 '갈가돌' 부대였고 강림제에 
+                                    모인 사람들은 '갈가돌'의 부대에 무참히 짓밟힌다. 
+                                    조금 늦게 도착한 아돈의 눈 앞에서 많은 사람들이 
+                                    살육 되었고 레지스탕스의 우두머리 <font color="white"><b>쉠</b></font>은 
+                                    '드래곤'들의 힘을 빌어 대항했으나 많은 수의 
+                                    '갈가돌' 앞에 격국 쓰러진다. <font color="white"><b>쉠</b></font>은 
+                                    아돈에게 교황을 처단해 줄 것을 부탁하고는 
+                                    죽음을 맞이한다. 그와 함께 '드래곤'들도 
+                                    사라진다. 아돈은 남은 레지스탕스 일원들의 
+                                    도움으로 겨우 탈출하고 YAEM의 ANAN으로 간다.</p>
+                                    <p align="justify">ANAN에서 아돈은 그 여인을 
+                                    만나 <font color="white"><b>쉠</b></font>의 
+                                    과거에 대해 듣게 된다. <font color="white"><b>쉠</b></font>은 
+                                    원래 SHEREG국의 떠돌이로 우연히 제사장의 
+                                    마을이 있었던 폐허에 가게 되고 거기서 한 
+                                    노인을 만나 '드래곤' 소환을 배우게 된다. 
+                                    그 후 그는 그 힘으로 교황에 대적하기 위해 
+                                    DEAMONLON의 TERAS에서 단체를 키워왔던 것이다. 
+                                    제사장의 마을은 일반인에게는 알려지지 않은 
+                                    마을이었다. 오래 전 신들의 전쟁 이후, 대대로 
+                                    제사장의 마을에서는 신들에 대한 경배가 이루어져 
+                                    왔으며 그 마을의 제사장들은 수많은 강력한 
+                                    마법들을 구사한다는 소문이었다. 이에 아돈은 
+                                    여인이 알려 준 제사장의 마을을 찾아 SHEREG로 
+                                    향한다.</p></td>
+                                <td width="45" align="right" valign="top"><p><a href="#top"><img src="placeholders/top.svg" alt="Back to top" width="41" height="37" border="0"></a></p></td>
+                            </tr>
+                            <tr>
+                                <td width="485" class="txt2"><p align="justify"><br> 
+                                    이젠 폐허가 되어버린 제사장의 마을에 다다른 
+                                    아돈은 마을 뒤편에 있던 제사의 동굴에서 
+                                    한 노인의 환영과 만나게 된다. 그는 아돈에게 
+                                    교황의 과거에 대해서 이야기를 해 준다. 교황은 
+                                    원래 제사장 마을의 사람이었다. 그는 어릴 
+                                    때부터 마법에 매우 능했고 새로운 마법을 
+                                    익히려는 욕구가 매우 강한 자였다. 제사장의 
+                                    마을에는 일반 마을 사람들에게는 공개되지 
+                                    않는 금서들이 몇 권 있었는데 어린 교황은 
+                                    그 금서에 기록되어 있는 금기 마법들에 호기심을 
+                                    가져 그 금서들을 몰래 보다가 쫓겨난다. 추방당한 
+                                    교황은 신분을 숨기고 교황이 된 후 그의 권력으로 
+                                    제사장의 마을을 공격하여 그 금서들을 손에 
+                                    넣는다. 금기의 마법들을 익힌 교황은 마법의 
+                                    영향으로 점점 삐뚤어져만 가고 결국은 폭정을 
+                                    행하는 악군이 되어 버린 것이었다. 노인의 
+                                    환영은 바로 평민 레지스탕스의 우두머리에게 
+                                    '드래곤' 소환술을 가르쳐 준 노인이었으며 
+                                    그는 많은 '드래곤'들이 사라진 지금 교황의 
+                                    암흑 마법에 대항하기 위해선 '화이트 드래곤'의 
+                                    힘을 빌리는 수밖에는 없다는 정보를 주고 
+                                    '드래곤'을 소환할 수 있는 방법을 가르쳐 
+                                    준다. 이에 아돈은 '드래곤'을 만나기 위해 
+                                    꿈의 신인 '할롬'의 제단이 있는 SHEREG의 
+                                    ILLEM으로 향한다.</p>
+                                    <p align="justify">ILLEM에 도착한 아돈은 
+                                    ILLEM 외곽의 한 던젼에서 신의 전쟁을 종식시킨 
+                                    장본인인 '화이트 드래곤'을 만나게 되고 '화이트 
+                                    드래곤'은 아돈에게 '할롬'의 시험을 통과할 
+                                    것을 요구한다. '할롬'의 시험을 통과한 아돈은 
+                                    당당히 '드래곤'의 주인으로써 인정을 받는다. 
+                                    아돈은 '화이트 드래곤'과 함께 교황청이 있는 
+                                    AESH로 향한다. 교황청에서 무수한 '갈가돌'들과 
+                                    암흑마법으로 소환된 수많은 '몬스터'들과의 
+                                    전투를 거쳐 교황과 대적하게 된 아돈은 힘겹게 
+                                    교황을 물리친다.</p></td>
+                                <td width="45" align="right" valign="top"><p><a href="#top"><img src="placeholders/top.svg" alt="Back to top" width="41" height="37" border="0"></a></p></td>
+                            </tr>
+                            <tr>
+                                <td width="485" class="txt2"><p>&nbsp;</p></td>
+                                <td width="45" align="right" valign="top"><p><a href="#top"><img src="placeholders/top.svg" alt="Back to top" width="41" height="37" border="0"></a></p></td>
+                            </tr>
+                        </tbody></table></td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="2"><p><img src="placeholders/inx-copy.gif.svg?v=2" alt="abalon studio all right reserved" width="307" height="21" border="0"></p></td>
+                </tr>
+            </tbody></table></td>
+    </tr>
+</tbody></table>
+
+
+
+</body></html>
+<!--
+     FILE ARCHIVED ON 23:02:20 Feb 29, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:41:12 Jul 07, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 1.153
+  exclusion.robots: 0.363
+  exclusion.robots.policy: 0.346
+  esindex: 0.014
+  cdx.remote: 8.949
+  LoadShardBlock: 147.583 (3)
+  PetaboxLoader3.datanode: 82.348 (4)
+  PetaboxLoader3.resolve: 96.337 (2)
+  load_resource: 90.244
+-->
