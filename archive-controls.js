@@ -36,9 +36,7 @@
   var stone = document.getElementById('appearance-stone');
   var rough = document.getElementById('appearance-rough');
   var blood = document.getElementById('appearance-blood');
-  var logo = 'text';
-  try { logo = new URLSearchParams(window.location.search).get('logo') || localStorage.getItem('abalon-logo') || 'text'; } catch (error) {}
-  if (logo !== 'image' && logo !== 'studio' && logo !== 'entertainment') logo = 'text';
+  var logo;
   var textLogo = document.getElementById('logo-text');
   var imageLogo = document.getElementById('logo-image');
   var studioLogo = document.getElementById('logo-studio');
@@ -47,6 +45,16 @@
   var appearance = 'recovered';
   try { appearance = new URLSearchParams(window.location.search).get('appearance') || localStorage.getItem('abalon-appearance') || 'recovered'; } catch (error) {}
   if (appearance !== 'tech' && appearance !== 'late' && appearance !== 'stone' && appearance !== 'rough' && appearance !== 'blood') appearance = 'recovered';
+  var defaultLogos = { recovered: 'text', tech: 'image', late: 'studio', stone: 'entertainment', rough: 'image', blood: 'studio' };
+  function validLogo(value) { return ['text', 'image', 'studio', 'entertainment'].indexOf(value) !== -1; }
+  function logoForTheme(name) {
+    var saved;
+    try { saved = localStorage.getItem('abalon-logo-' + name); } catch (error) {}
+    return validLogo(saved) ? saved : defaultLogos[name];
+  }
+  var requestedLogo;
+  try { requestedLogo = new URLSearchParams(window.location.search).get('logo'); } catch (error) {}
+  logo = validLogo(requestedLogo) ? requestedLogo : logoForTheme(appearance);
   var newsDots = Array.prototype.slice.call(document.querySelectorAll('img[src^="news_files/news-dot.gif"]')).map(function (img) {
     return { node: img, original: img.getAttribute('src') };
   });
@@ -72,7 +80,7 @@
       item.node.setAttribute('src', name === 'recovered' ? item.original : 'placeholders/' + name + '/news-dot.svg');
     });
     themedImages.forEach(function (item) {
-      var source = name === 'recovered' ? item.original : item.original.replace('placeholders/', 'placeholders/' + name + '/') + (item.original.indexOf('?') === -1 ? '?' : '&') + 'theme=8';
+      var source = name === 'recovered' ? item.original : item.original.replace('placeholders/', 'placeholders/' + name + '/') + (item.original.indexOf('?') === -1 ? '?' : '&') + 'theme=13';
       item.node.setAttribute('src', source);
     });
     applyLogo();
@@ -103,7 +111,7 @@
   }
   function selectLogo(name) {
     logo = name;
-    try { localStorage.setItem('abalon-logo', name); } catch (error) {}
+    try { localStorage.setItem('abalon-logo-' + appearance, name); } catch (error) {}
     applyAppearance(appearance);
     appearanceOptions.hidden = true;
     appearanceToggle.setAttribute('aria-expanded', 'false');
@@ -114,6 +122,7 @@
   studioLogo.addEventListener('click', function () { selectLogo('studio'); });
   entertainmentLogo.addEventListener('click', function () { selectLogo('entertainment'); });
   function selectAppearance(name) {
+    logo = logoForTheme(name);
     applyAppearance(name);
     try { localStorage.setItem('abalon-appearance', name); } catch (error) {}
     appearanceOptions.hidden = true;

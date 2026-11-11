@@ -167,3 +167,19 @@ html[data-appearance="stone"] img[src*="placeholders/stone/gallery-"],
 html[data-appearance="stone"] img[src*="placeholders/stone/intro-timeline"] {
   background: #555 url('placeholders/stone/section-reference.png') -390px -750px / 3840px 2880px no-repeat;
 }
+
+/* Layer the supplied game art in Stone; other appearances keep the archive image. */
+.stone-game-art { display: none; }
+html[data-appearance="stone"] .game-original-art { display: none; }
+html[data-appearance="stone"] .stone-game-art { display: inline-block; position: relative; width: 300px; height: 300px; overflow: hidden; background: #000 url('assets/stone/game-background.png') center / cover no-repeat; }
+html[data-appearance="stone"] .stone-game-art img { width: 100%; height: 100%; object-fit: contain; object-position: center bottom; }
+
+html[data-appearance="stone"] img[src*="placeholders/stone/menu-header"],
+html[data-appearance="stone"] img[src*="placeholders/stone/other-header"],
+html[data-appearance="stone"] img[src*="placeholders/stone/intro-timeline"],
+html[data-appearance="stone"] img[src*="placeholders/stone/gallery-characters"] { background: transparent; }
+
+html[data-appearance="stone"] img[src*="placeholders/stone/gallery-title"],
+html[data-appearance="stone"] img[src*="placeholders/stone/gallery-screens"],
+html[data-appearance="stone"] img[src*="placeholders/stone/gallery-other"] { background: transparent; }
+html[data-appearance="blood"] body { background: #050202 url('assets/stone/game-background.png') center top / cover fixed no-repeat !important; }
